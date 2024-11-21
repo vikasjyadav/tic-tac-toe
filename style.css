@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #e3bc0b4b;
+    background-color: #173030ed;
 }
 
 .container {
@@ -27,8 +27,8 @@ h1 {
 .cell {
     width: 100px;
     height: 100px;
-    background-color: white;
-    border: 2px solid #333;
+    background-color: rgb(49,52,34);
+    border: 2px solid #2fced3;
     font-size: 2em;
     text-align: center;
     line-height: 100px;
@@ -38,7 +38,7 @@ h1 {
 
 .cell.taken {
     pointer-events: none;
-    color: gray;
+    color: rgb(25,228,38);
 }
 
 #status {
