@@ -63,19 +63,22 @@ function checkWinner() {
     }
 
     if (roundWon) {
-        statusDisplay.textContent = `Player ${currentPlayer} wins!`;
+        statusDisplay.textContent = `🎉🎉🎉🎉Player ${currentPlayer} wins!🎉🎉🎉🎉`;
+        statusDisplay.style.color="Red";
         gameActive = false;
         return;
     }
 
     if (!gameState.includes("")) {
         statusDisplay.textContent = "It's a draw!";
+        statusDisplay.style.color="Red";
         gameActive = false;
         return;
     }
 
     currentPlayer = currentPlayer === "X" ? "O" : "X";
     statusDisplay.textContent = `Player ${currentPlayer}'s turn`;
+    statusDisplay.style.color="green";
 }
 
 // Reset the game
